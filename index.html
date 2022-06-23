@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    "firstname":"John ",
+    "lastname":"Doe",
+    "email":"example1212@gmail.com",
+    "phone":"+998889898",
+    "password":"1212121221"
+ -->
+    <div class="container">
+        <form class="myform row">
+            <div class=" col-4">
+                <label>
+                    Email:
+                    <input class="email" type="email">
+                </label>
+
+                <label>
+                    Telefon raqami:
+                    <input class="phone" type="tel">
+                </label>
+            </div>
+
+            <div class="col-4">
+                <label>
+                    Ism:
+                    <input class="firstname" type="text">
+                </label>
+
+                <label>
+                    Familiya:
+                    <input class="lastname" type="text">
+                </label>
+            </div>
+
+
+
+            <div class="col-4">
+                <label>
+                    parol:
+                    <input class="password" type="password">
+                </label>
+
+                <button type="submit">Send</button>
+            </div>
+
+        </form>
+        <div class="row">
+            <div class="col user-container">
+                No user found
+            </div>
+        </div>
+    </div>
+
+    <template id="user">
+        <div class="user border rounded-3 p-3 m-2 d-flex align-items-center justify-content-between">
+            <div class="info ">
+                id:1 name:John lastname:Doe
+            </div>
+            <div>
+                <button class="btn btn-danger delete-btn ">Delete</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="./js/http.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
